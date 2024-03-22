@@ -24,6 +24,108 @@ public class Application {
         }
     }
 
+
+
+    public static void randomEventTaxiAction(int hp){
+        UnFixedEvent ufe = new UnFixedEvent();
+        Student player = new Student();
+        int delay = 1000;
+        int i=0;
+        for(i =0; i<3; i++){
+            try{
+                Thread.sleep(delay);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            int random = (int) (Math.random()*2+1);
+            if(i==0){
+                System.out.println("콜 택시 부르는 중~");
+                if(random==1){
+                    System.out.println(ufe.getUfeEvent(1));
+                    player.setHp(hp+5);
+                }
+            } else if(i==1){
+                System.out.println("콜 택시 기다리는 중~");
+                if(random==1){
+                    System.out.println(ufe.getUfeEvent(7));
+                    player.setHp(hp - 10);
+                    break;
+                }
+            } else if(i==2){
+                System.out.println("택시타고 학교 도착~!");
+                player.setHp(hp+10);
+            }
+        }
+        if(i==1){
+            System.out.println("어찌저찌 지각은 면했다 ㅠㅠ");
+        }
+    }
+    public static void randomEventSubwayAction(int hp){
+        UnFixedEvent ufe = new UnFixedEvent();
+        Student player = new Student();
+        int delay = 1000;
+        int i=0;
+        for( i=0; i<3; i++){
+            try{
+                Thread.sleep(delay);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            int random = (int) (Math.random()*2+1);
+            if(i==0){
+                System.out.println("지하철 타러 갈 준비중~~~");
+                if(random==1){
+                    System.out.println(ufe.getUfeEvent(1));
+                    player.setHp(hp +5);
+                }
+            }else if(i==1){
+                System.out.println("지하철 타러 가는 중~~~");
+                if(random==1){
+                    System.out.println(ufe.getUfeEvent(6));
+                    player.setHp(hp-5);
+                    System.out.println("다음 지하철 기다리는중... ㅠ");
+                    break;
+                }
+            } else if(i==2){
+                System.out.println("지하철 타고 학교 도착!");
+                player.setHp(hp + 5);
+            }
+        }
+        if(i==1){
+            System.out.println("지하철 타고 무사히 학교 도착...");
+        }
+    }
+    public static void randomEventBusAction(int hp) {
+        UnFixedEvent ufe = new UnFixedEvent();
+        Student player = new Student();
+        int delay = 1000;
+        int i=0;
+        for ( i = 0; i < 3; i++) {
+            try {
+                Thread.sleep(delay);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            int random = (int) (Math.random()*2 +1);
+            if(i ==0){
+                System.out.println("버스 타러 가는중...");
+            } else if( i==1){
+                if(random ==1){
+                    System.out.println(ufe.getUfeEvent(5));
+                    System.out.println("갑자기 어지러워지기 시작했다...");
+                    player.setHp(hp -5);
+                    System.out.println("다음 버스를 기다리자...");
+                    break;
+                }
+            } else if (i==2){
+                System.out.println("버스타고 학교 도착!");
+                player.setHp(hp+5);
+            }
+        }
+        if(i==1){
+            System.out.println("학교에 무사히 도착했다...");
+        }
+    }
     public static void randomEventWalkingAction(int hp){
         UnFixedEvent ufe = new UnFixedEvent();
         Student player = new Student();
@@ -45,7 +147,7 @@ public class Application {
             } else if(i==1){
                 System.out.println("걸어가는 중...");
                 if(random==1){
-                    System.out.println(ufe.getUfeEvent(4));
+                    System.out.println(ufe.getUfeEvent(5));
                     player.setHp(hp-5);
                 }
             } else {
@@ -70,16 +172,15 @@ public class Application {
             // 아침기상 이후 이벤트 출력
                 fe.getwakeUpFEvent();
                 player.morningRandomEvent();
-                System.out.print("무엇을 타고 갈 건지 선택해주세요 : 1. 걸어간다, 2. 버스를 버슈웅, 3. 전철 4. 택시");
+                fe.getwakeUpFEvent();
+
                 int choice = sc.nextInt();
                 switch (choice) {
                     case 1:
                         randomEventWalkingAction(hp);
                         break;
                     case 2:
-                        System.out.println("'버스를 버슈웅'을 선택했습니다.");
-                        System.out.println("버스를 버슈웅~~");
-                        player.setHp(hp + 5);
+                        randomEventBusAction(hp);
                         break;
                     case 3:
                         System.out.println("'전철'을 선택했습니다.");
