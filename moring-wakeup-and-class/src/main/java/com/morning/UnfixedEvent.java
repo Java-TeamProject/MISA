@@ -8,6 +8,7 @@ public class UnfixedEvent {
                     "여유롭게 일어나서 아침밥 야무지게 먹을까?", //1
                     "버스가 눈앞에서 버슈우우웅~~택시를 타야하나....ㅠ",  //2
                     "커피 사가면서 아침수업 빡집중 해볼까?", //3
+                    "으아악! 넘어졌다 ㅠㅠㅠ",
 
                     /* 인덱스 4~6번 까지는 10~13시 오전 수업때 일어날수 있는 돌발 이벤트*/
                     "Zzzzzz..... 컥! 어... 몇...시지? 오늘은 대충 들을까?", //4
@@ -21,7 +22,7 @@ public class UnfixedEvent {
         }
     }
 
-
-
-
+    public String getUfeEvent(int num){
+        return ufEvent[num];
+    }
 }

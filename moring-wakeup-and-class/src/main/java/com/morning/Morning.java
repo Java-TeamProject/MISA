@@ -1,5 +1,6 @@
 package com.morning;
 
+import java.util.Map;
 import java.util.Scanner;
 
 public class Morning {
@@ -9,11 +10,19 @@ public class Morning {
         FixedEvent fe = new FixedEvent();
         UnfixedEvent ufe = new UnfixedEvent();
         Student std = new Student();
-        //시간 설정 && 체력 설정
+
+        //시간 설정 && 체력 설정(임의입니다)
         int time =7;
         int hp = 30;
         std.setTme(time);
         std.setHp(hp);
+
+        //돌발 이벤트 변수
+
+        // 딜레이 시간 표현
+        int delay = 1000;
+
+
         // 아침기상이후 이벤트 출력 문
         if(std.getTime()>=7 && std.getTime()<=10){
             fe.getwakeUpFEvent();
@@ -22,7 +31,30 @@ public class Morning {
             switch(choice){
                 case 1:
                     System.out.println("'걸어간다'를 선택했습니다.");
-                    System.out.println("걸어갑니다~~");
+                    for(int i=0; i<3; i++){
+                        try{
+                            Thread.sleep(delay);
+                        }catch(InterruptedException e){
+                            e.printStackTrace();
+                        }
+                        int random = (int) (Math.random()*2 +1);
+                        if(i==0){
+                            System.out.println("걸어갈려고 준비중...");
+                            if(random ==1){
+                                System.out.println(ufe.getUfeEvent(1));
+                                std.setHp(hp + 10);
+                            }
+                        } else if(i==1){
+                            System.out.println("걸어가는 중...");
+                            if(random==1){
+                                System.out.println(ufe.getUfeEvent(4));
+                                std.setHp(hp-5);
+                            }
+                        } else {
+                            System.out.println("학교에 도착했다!");
+                        }
+                    }
+
                     std.setHp(hp-10);
                     break;
                 case 2:
@@ -41,6 +73,7 @@ public class Morning {
                     std.setHp(hp +10);
                     break;
             }
+
 
             System.out.println(std.getHp());
 
