@@ -10,6 +10,9 @@ public class Student {
     private int fame; // 인망
     private int hiddenAbility; // 히든 능력치
 
+    public Student() {
+
+    }
 
     // 생성자
     public Student(int hp, int intelligence, int money, int fame) {
