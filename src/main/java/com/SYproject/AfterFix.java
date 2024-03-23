@@ -4,8 +4,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class AfterFix {
-
-
         /*1.	공부 (체력에 따라)
                 결말 (1) 공부하다 잠들었다. 아침 된다. (체력 up)
                 (침대 선택지와 수치 차이 두기)
