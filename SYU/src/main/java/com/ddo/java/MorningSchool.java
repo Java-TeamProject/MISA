@@ -99,7 +99,7 @@ public class MorningSchool {
         }
 
         // 점심으로 넘겨줄 data
-        Data data = new Data( player);
+        Data data = new Data(player);
         System.out.println(data.getPlayer().getHp() + " " + data.getPlayer().getIntelligence());
     }
 
