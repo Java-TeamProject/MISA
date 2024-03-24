@@ -1,13 +1,47 @@
-package com.ddo.java;
-
+package com.SYproject;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class MorningSchool {
+public class Morning {
+
+    public void runMonrningEvent(Student player){
+        Scanner sc = new Scanner(System.in);
+        EventTxt eventTxt = new EventTxt();
+        RandomEvent randomEvent = new RandomEvent();
+
+        // 시간 설정 및 체력 설정
+        int hp = 30;
+        player.setHp(hp);
+
+        // 아침기상 이후 이벤트 출력
+        randomEvent.morningRandomEvent();
+        eventTxt.getwakeUpFEvent();
+        System.out.print("어떻게 갈건지 선택해주세요 : ");
+
+        int choice = sc.nextInt();
+        switch (choice) {
+            case 1:
+                randomEvent.randomEventWalkingAction(hp);
+                break;
+            case 2:
+                randomEvent.randomEventBusAction(hp);
+                break;
+            case 3:
+                randomEvent.randomEventSubwayAction(hp);
+                break;
+            case 4:
+                randomEvent.randomEventTaxiAction(hp);
+                break;
+        }
+        morningSchoolEvent(player);
+    }
+
     public void morningSchoolEvent(Student player){
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
+        Start start = new Start();
+        EventTxt eventTxt = new EventTxt();
 
         // 체력이 6 미만인 경우
         if (player.getHp() < 6) {
@@ -16,11 +50,10 @@ public class MorningSchool {
             return; // 메서드 종료
         }
         // 오전 수업 중 돌발 이벤트 발생
-        player.morningClassRandomEvent();
+        start.morningClassRandomEvent();
 
         System.out.println("오전 수업이 다가왔습니다!!");
-        FixedEvent fixedEvent = new FixedEvent();
-        for (String event : fixedEvent.morningStudyFEvent) {
+        for (String event : eventTxt.morningStudyFEvent) {
             System.out.println(event);
         }
         System.out.print("할 일을 선택해주세요~ : ");
@@ -98,9 +131,7 @@ public class MorningSchool {
             player.setIntelligence(player.getIntelligence() - 2);
         }
 
-        // 점심으로 넘겨줄 data
-        Data data = new Data(player);
-        System.out.println(data.getPlayer().getHp() + " " + data.getPlayer().getIntelligence());
-    }
 
+    }
 }
+
