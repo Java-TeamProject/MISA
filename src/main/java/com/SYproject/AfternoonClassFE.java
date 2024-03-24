@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class AfternoonClassFE {
 
+    // 테스트 1차입니다.
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
 
