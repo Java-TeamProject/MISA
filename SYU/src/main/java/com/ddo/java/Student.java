@@ -14,6 +14,9 @@ public class Student {
 
     }
 
+    public Student(int hp){
+        this.hp = hp;
+    }
     // 생성자
     public Student(int hp, int intelligence, int money, int fame) {
         this.hp = hp;
