@@ -16,6 +16,10 @@ public class Application {
             System.out.println();
             Start start = new Start();
             start.start(student);
+            LunchTimeEvent lunchTimeEvent= new LunchTimeEvent();
+            lunchTimeEvent.lunchTimeEvent(student);
+            AfternoonClass afternoonClass= new AfternoonClass();
+            afternoonClass.afternoonFEStart(student);
             AfterFix afterFix = new AfterFix();
             afterFix.AfterFixEvent(student);
             day++;

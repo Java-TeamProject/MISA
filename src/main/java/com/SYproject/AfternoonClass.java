@@ -190,7 +190,7 @@ public class AfternoonClass {
         System.out.println("2. 절반만 필기");
         System.out.println("3. 필기 포기");
 
-        System.out.println("필기 활동을 선택하세요:");
+        System.out.print("필기 활동을 선택하세요:");
         boolean isTrue = true;
         do {
             int writingChoice = sc.nextInt();
@@ -212,12 +212,14 @@ public class AfternoonClass {
                         // 체력 -15, 지능 +15
                         student.setHp(student.getHp()-15);
                         student.setIntelligence(student.getIntelligence()+15);
+                        isTrue=false;
                         break;
                     }
                 case 3:
                     // 체력 +30, 지능 -30
                     student.setHp(student.getHp()+30);
                     student.setIntelligence(student.getIntelligence()-30);
+                    isTrue=false;
                     break;
                 default:
                     System.out.println("올바른 필기 활동을 선택해주세요.");
@@ -302,6 +304,7 @@ public class AfternoonClass {
                     if (student.getHp() > 20) {
                         System.out.println("수업시간에 하기를 선택하셨습니다.");
                         modifyStudentStatus(student, -20, 0, 30);
+                        isTrue=false;
                         break;
                     } else{
                         System.out.println("체력이 너무 적어 선택할수 없습니다!");

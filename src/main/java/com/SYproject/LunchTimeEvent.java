@@ -8,7 +8,7 @@ public class LunchTimeEvent {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("점심시간이다~~ 뭐할까??");
+        System.out.print("점심시간이다~~ 뭐할까??");
 
         System.out.println("1. 밥 먹기");
         System.out.println("2. 커피 마시기");
@@ -16,8 +16,8 @@ public class LunchTimeEvent {
         System.out.println("4. 양치하기");
         System.out.println();
         System.out.print("선택지를 고르세요:");
-        System.out.println();
         int choice = sc.nextInt();
+        System.out.println();
 
         // 선택지에 따라 이벤트 처리
         switch (choice) {
@@ -29,7 +29,7 @@ public class LunchTimeEvent {
                 System.out.println("3. 밥 안먹기");
                 System.out.println();
                 System.out.print("선택지를 고르세요: ");
-                System.out.println();
+
                 int lunchOption = sc.nextInt();
                 switch (lunchOption) {
                     case 1:
@@ -70,7 +70,7 @@ public class LunchTimeEvent {
                 System.out.println("3. 커피 안마시기");
                 System.out.println();
                 System.out.print("선택지를 고르세요: ");
-                System.out.println();
+
                 int coffeeOption = sc.nextInt();
                 switch (coffeeOption) {
                     case 1:
@@ -108,7 +108,7 @@ public class LunchTimeEvent {
                 System.out.println("3. 유튜브 보기");
                 System.out.println();
                 System.out.print("선택지를 고르세요: ");
-                System.out.println();
+
                 int timeOption = sc.nextInt();
                 switch (timeOption) {
                     case 1:
@@ -151,7 +151,6 @@ public class LunchTimeEvent {
                 System.out.println("2. 양치 안하기");
                 System.out.println("3. 가글만 사용하기");
                 System.out.print("선택지를 고르세요: ");
-                System.out.println();
                 int brushOption = sc.nextInt();
                 switch (brushOption) {
                     case 1:
@@ -289,7 +288,6 @@ public class LunchTimeEvent {
 
         // 선택지 입력 안내
         System.out.print("선택지를 고르세요: ");
-        System.out.println();
         int choice = sc.nextInt();
         switch (choice) {
             case 1:
