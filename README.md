@@ -1,6 +1,6 @@
 # 📖 삼육대 4학년 예비 졸업생 키우기!
 
-![readme_mockup2](https://user-images.githubusercontent.com/112460466/210706312-6a44b60d-a42e-4210-b334-9e5983f70fb3.png)
+![스크린샷(6768)](https://github.com/Java-TeamProject/MISA/assets/106863692/846e6651-a686-4c5b-90f5-0fd9b8e68cde)
 
 <br>
 
