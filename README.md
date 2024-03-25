@@ -18,7 +18,7 @@
 <div align="center">
 
 | **이수빈** | **김상익** | **이재혁** | **배민서** | **오송은** |
-| :------: |  :------: | :------: | :------: |
+| :------: |  :------: | :------: | :------: |:------: |
 | [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=100 width=100> <br/> @sb-77](https://github.com/sb-77) | [<img src="https://avatars.githubusercontent.com/u/112460466?v=4" height=100 width=100> <br/> @GTU9](https://github.com/GTU9) | [<img src="https://avatars.githubusercontent.com/u/112460506?v=4" height=100 width=100> <br/> @ohdyo](https://github.com/ohdyo) | [<img src="https://avatars.githubusercontent.com/u/76766459?v=4" height=100 width=100> <br/> @Baeminseo](https://github.com/Baeminseo) |[<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=100 width=100> <br/> @ddoddo1228](https://github.com/ddoddo1228) |
 
 </div>
@@ -87,8 +87,6 @@ MISA
 
 - **기능**
     - 오전 고정, 돌발, 출발 이벤트, 오후 수업 클래스 병합, 수치 조정 테스트
-
-<br>
     
 ### 👻오송은
 
@@ -114,7 +112,7 @@ MISA
 - **기능**
     - 오후 돌발 이벤트, 엔딩, 수치 조정 테스트, 아스키코드
     
-
+<br>
 
 ## 5. 개발 기간 및 작업 관리
 
