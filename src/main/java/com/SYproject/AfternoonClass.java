@@ -132,6 +132,7 @@ public class AfternoonClass {
                     // 체력 +50, 인망 -50
                     student.setHp(student.getHp()+50);
                     student.setIntelligence(student.getIntelligence()-50);
+                    isTrue=false;
                     break;
                 default:
                     System.out.println("올바른 프로젝트 활동을 선택해주세요.");
