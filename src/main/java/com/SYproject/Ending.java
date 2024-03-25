@@ -6,6 +6,7 @@ public class Ending {
     private final int ResultMoney;
     private final int resultFame;
     private final int resultHiddenAbility;
+    public  String resultname;
 
 
     public Ending(Student student){
@@ -14,6 +15,7 @@ public class Ending {
         resultFame=student.getFame();
         ResultMoney= student.getMoney();
         resultHiddenAbility = student.getHiddenAbility();
+        resultname= student.getName();
 
     }
 
@@ -134,6 +136,7 @@ public class Ending {
 
             System.out.println("축하합니다. 엔딩에 도달하셨군요!");
             System.out.println("게임의 결과를 정산합니다!");
+            System.out.println("플레이어 캐릭터 "+resultname+"의 능력치");
             System.out.println("플레이어 캐릭터의 최종 체력 : " + getResultHp());
             System.out.println("플레이어 캐릭터의 최종 소지금 : " + getResultMoney());
             System.out.println("플레이어 캐릭터의 최종 지능 : " + getResultIntelligence());
