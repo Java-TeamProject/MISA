@@ -27,6 +27,10 @@ public class AfterSuddenEvent{
             System.out.print("입력 : ");
             int num = sc.nextInt();
             if(num==1){
+                if(student.getHp()<20){
+                    System.out.println("체력이 모자랍니다. 다른 선택지를 골라주세요.");
+                    continue;
+                }
                 System.out.println();
                 System.out.println("\"그러죠 뭐. 술은 선배님이 사주는 거죠?\"\n\"당연히 내가 사줘야지! 오늘 아주 먹고 죽자! 너한테 사회생활의 무서움을 알려주지.\"\n" +
                         "당신은 오랜만에 만난 선배와 못다한 이야기를 하며 밤 늦게 시간을 보냈습니다.");
@@ -108,6 +112,10 @@ public class AfterSuddenEvent{
             System.out.print("입력 : ");
             int num = sc.nextInt();
             if(num==1){
+                if(student.getHp()<10){
+                    System.out.println("체력이 모자랍니다. 다른 선택지를 골라주세요.");
+                    continue;
+                }
                 System.out.println();
                 System.out.println("당신은 상황이 심상치 않음을 느꼈고, 옆집 문앞으로가 문을 두드리기 시작했습니다. \n " +
                         "\"저기요! 괜찮으세요?!\" 아무 반응이 없자 119를 불렀고 안에는 경련을 일으키는 옆집 사람이 있었습니다.\n" +

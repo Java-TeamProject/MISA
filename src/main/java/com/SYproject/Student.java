@@ -7,6 +7,8 @@ public class Student {
         private int fame; // 인망
         private int hiddenAbility; // 히든 능력치
 
+        private String name;
+
 
         // 생성자
         public Student(int hp, int intelligence, int money, int fame) {
@@ -22,7 +24,11 @@ public class Student {
         }
 
         public void setHp(int hp) {
-            this.hp = hp;
+            if(hp<0){
+                this.hp=0;
+            }else {
+                this.hp = hp;
+            }
         }
 
         public int getIntelligence() {
@@ -52,4 +58,12 @@ public class Student {
         public int getHiddenAbility() {
             return hiddenAbility;
         }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
