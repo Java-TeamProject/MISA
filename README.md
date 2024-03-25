@@ -1,6 +1,5 @@
 # 📖 삼육대 4학년 예비 졸업생 키우기!
-
-[첫 페이지.pdf](https://github.com/Java-TeamProject/MISA/files/14743656/default.pdf)
+![001](https://github.com/Java-TeamProject/MISA/assets/106863692/cf2e04d2-3b71-423f-9603-cc2c6e216096)
 
 <br>
 
@@ -27,6 +26,8 @@
 <br>
 
 ## 1. 개발 환경
+![004](https://github.com/Java-TeamProject/MISA/assets/106863692/9aa89b66-62a6-46a0-b3a5-9e095de2fa88)
+
 
 - Back-end : IntelliJ IDEA, 아스키코드
 - 버전 및 이슈관리 : Github, Github Issues, Github Project
@@ -80,6 +81,8 @@ MISA
 
 ## 4. 역할 분담
 
+![005](https://github.com/Java-TeamProject/MISA/assets/106863692/351a1b3e-d9ec-4b32-9d00-95084f354306)
+
 ### 🍊이재혁
 
 - **기능**
@@ -92,28 +95,26 @@ MISA
 - **기능**
     - 프롤로그, 오전 수업 고정, 돌발이벤트
 
-<br>
 
 ### 😎이수빈
 
 - **기능**
     - 점심 시간 고정, 돌발 이벤트, 오후 수업 고정, 돌발 이벤트
 
-<br>
 
 ### 🐬배민서
 
 - **기능**
     - 오후 고정 이벤트 오후 돌발이벤트 병합
 
-<br>
+
     
 ### 🐬김상익
 
 - **기능**
     - 오후 돌발 이벤트, 엔딩, 수치 조정 테스트, 아스키코드
     
-<br>
+
 
 ## 5. 개발 기간 및 작업 관리
 
