@@ -1,15 +1,28 @@
 package com.SYproject;
 
+import java.util.Scanner;
+
 public class Application {
     public static void main(String[] args) {
-        Student player = new Student(100,0,0,0);
-        Start start = new Start();
-        start.start(player);
+        Scanner sc=new Scanner(System.in);
+        int day=1;
+        Student student = new Student(100, 0, 0, 0);
+        System.out.print("이름을 입력하세요 : ");
+        student.setName(sc.nextLine());
 
-        LunchTimeEvent lunchTiemeEvent = new LunchTimeEvent();
-        lunchTiemeEvent.lunchTimeEvent(player);
+        while(true) {
+            System.out.println();
+            System.out.println("Day"+day);
+            System.out.println();
+            Start start = new Start();
+            start.start(student);
+            AfterFix afterFix = new AfterFix();
+            afterFix.AfterFixEvent(student);
+            day++;
+            if(day>14)break;
+        }
 
-        AfternoonClass afternoonClass = new AfternoonClass();
-        afternoonClass.afternoonFEStart(player);
+        Ending ending = new Ending(student);
+        ending.resultEnding();
     }
 }
