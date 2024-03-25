@@ -10,6 +10,7 @@ public class Application {
         System.out.print("이름을 입력하세요 : ");
         student.setName(sc.nextLine());
 
+
         while(true) {
             System.out.println();
             System.out.println("Day"+day);
@@ -23,7 +24,7 @@ public class Application {
             AfterFix afterFix = new AfterFix();
             afterFix.AfterFixEvent(student);
             day++;
-            if(day>14)break;
+            if(day>10)break;
         }
 
         Ending ending = new Ending(student);

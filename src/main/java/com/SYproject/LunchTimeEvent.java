@@ -53,6 +53,8 @@ public class LunchTimeEvent {
                         System.out.println();
 
                 }
+                System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+
                 break;
             case 2:
                 String art2 = "☕";
@@ -94,6 +96,8 @@ public class LunchTimeEvent {
                         System.out.println("잘못된 선택지입니다.");
                         System.out.println();
                 }
+                System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+
                 break;
             case 3:
                 String art3 = "\uD83D\uDD66";
@@ -138,6 +142,8 @@ public class LunchTimeEvent {
                         System.out.println();
 
                 }
+                System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+
                 break;
             case 4:
                 String art4 = "\uD83E\uDEA5";
@@ -174,7 +180,10 @@ public class LunchTimeEvent {
                         System.out.println("잘못된 선택지입니다.");
                         System.out.println();
                 }
+                System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+
                 break;
+
             default:
                 System.out.println("잘못된 선택지입니다.");
                 System.out.println();
@@ -203,6 +212,8 @@ public class LunchTimeEvent {
             default:
                 System.out.println("잘못된 이벤트입니다.");
         }
+        System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+
     }
 
     private static void professorMeetingEvent(Scanner sc, Student student) {

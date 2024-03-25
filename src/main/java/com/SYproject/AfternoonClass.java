@@ -48,6 +48,8 @@ public class AfternoonClass {
                 System.out.println("올바른 활동을 선택해주세요.");
                 System.out.print("다시 선택해주세요 : ");
         }
+        System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+
     }
 
     // 수업 활동 처리 메서드
@@ -93,6 +95,8 @@ public class AfternoonClass {
                     System.out.print("다시 선택해주세요 : ");
             }
         }while(isTrue);
+        System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+
     }
 
     // 프로젝트 활동 처리 메서드
@@ -138,6 +142,7 @@ public class AfternoonClass {
                     System.out.println("올바른 프로젝트 활동을 선택해주세요.");
             }
         }while(isTrue);
+        System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
     }
 
     // 공부 활동 처리 메서드
@@ -183,6 +188,7 @@ public class AfternoonClass {
                     System.out.print("다시 선택해주세요 : ");
             }
         }while(isTrue);
+
     }
 
     // 필기 활동 처리 메서드
@@ -228,6 +234,8 @@ public class AfternoonClass {
                     System.out.print("다시 입력해주세요 : ");
             }
         }while(isTrue);
+        System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+
     }
 
     // 돌발 이벤트
@@ -254,6 +262,8 @@ public class AfternoonClass {
                 System.out.println("잘못된 이벤트입니다.");
                 System.out.print("다시 입력하세요 : ");
         }
+        System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+
     }
 
     // 피로 이벤트

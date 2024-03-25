@@ -52,7 +52,7 @@ public class AfterFix {
                     System.out.println("[체력] -20");
                     System.out.println();
                     std.setHp(std.getHp() - 20);
-                    System.out.println("[체력] : "+std.getHp()+" [소지금] : "+std.getMoney()+" [지능] : "+std.getIntelligence()+" [인망] : "+std.getFame());
+                    System.out.println("[체력] : "+std.getHp()+" [지능] : "+std.getIntelligence()+" [인망] : "+std.getFame());
                 }else{
                     System.out.println("목표량까지 공부를 완수 완료! 내 자신 대단해!!");
                     System.out.println("지능 30 올랐지만 공부에 너무 열중한 나머지 체력이 10 떨어졌다...");
@@ -60,7 +60,7 @@ public class AfterFix {
                     System.out.println();
                     std.setIntelligence(std.getIntelligence() +30);
                     std.setHp(std.getHp() - 10);
-                    System.out.println("[체력] : "+std.getHp()+" [소지금] : "+std.getMoney()+" [지능] : "+std.getIntelligence()+" [인망] : "+std.getFame());
+                    System.out.println("[체력] : "+std.getHp()+" [지능] : "+std.getIntelligence()+" [인망] : "+std.getFame());
                 }
                 break;
 
@@ -104,13 +104,13 @@ public class AfterFix {
 //                            afterSuddenEvent.meetCollegeSenior(std);
 //                        }
 
-                        System.out.println("[체력] : "+std.getHp()+" [소지금] : "+std.getMoney()+" [지능] : "+std.getIntelligence()+" [인망] : "+std.getFame());
+                        System.out.println("[체력] : "+std.getHp()+" [지능] : "+std.getIntelligence()+" [인망] : "+std.getFame());
                         break;
                     }
                     // randomNum -= probabilities[i]; // 현재 단계의 확률만큼 값을 감소시켜 다음 단계의 비교를 위해 준비
                 }
 //                if(0==(int)(Math.random()*3)){
-//                    afterSuddenEvent.meetCollegeSenior(std);
+                    afterSuddenEvent.meetCollegeSenior(std);
 //                }
 //                if(Math.random() < 1.0/3.0){
 //                    afterSuddenEvent.meetCollegeSenior(std);
@@ -135,14 +135,14 @@ public class AfterFix {
 //                // 돌발이벤트 확률에 따라 실행 선택
 //                if (RandomNumber3 < randomPercent3) {
 //                    //돌발이벤트 자리
-//                    afterSuddenEvent.playGameWell(std);
+                    afterSuddenEvent.playGameWell(std);
 //                }
 
                 //돌발이벤트
                 System.out.println();
                 System.out.println("충분한 휴식을 취한 당신은 맘 편히 잔다. [체력] : +20");
                 std.setHp(std.getHp() + 20);
-                System.out.println("[체력] : "+std.getHp()+" [소지금] : "+std.getMoney()+" [지능] : "+std.getIntelligence()+" [인망] : "+std.getFame());
+                System.out.println("[체력] : "+std.getHp()+" [지능] : "+std.getIntelligence()+" [인망] : "+std.getFame());
                 System.out.println();
                 break;
 
@@ -161,7 +161,7 @@ public class AfterFix {
 //                // 돌발이벤트 확률에 따라 실행 선택
 //                if (RandomNumber4 < randomPercent4) {
 //                    //돌발이벤트 자리
-//                afterSuddenEvent.emergencyRescue(std);
+                afterSuddenEvent.emergencyRescue(std);
 //                }
                 // 꿈나라 여행 중의 확률 설정
                 double dreamPercent = 0.1; // 10%의 확률로 꿈나라 여행
@@ -177,13 +177,13 @@ public class AfterFix {
                     // 악몽을 꾸는 경우
                     System.out.println("꿈 속에서 악몽을 꿔서 체력이 적게 회복된다. [체력] +10");
                     std.setHp(std.getHp() + 10);
-                    System.out.println("[체력] : "+std.getHp()+" [소지금] : "+std.getMoney()+" [지능] : "+std.getIntelligence()+" [인망] : "+std.getFame());
+                    System.out.println("[체력] : "+std.getHp()+" [지능] : "+std.getIntelligence()+" [인망] : "+std.getFame());
                     System.out.println();
                 } else {
                     // 좋은 꿈을 꾸는 경우
                     System.out.println("푹 잠을 자서 체력이 많이 회복된다. [체력] +30");
                     std.setHp(std.getHp() + 30);
-                    System.out.println("[체력] : "+std.getHp()+" [소지금] : "+std.getMoney()+" [지능] : "+std.getIntelligence()+" [인망] : "+std.getFame());
+                    System.out.println("[체력] : "+std.getHp()+" [지능] : "+std.getIntelligence()+" [인망] : "+std.getFame());
                     System.out.println();
                 }
             default:

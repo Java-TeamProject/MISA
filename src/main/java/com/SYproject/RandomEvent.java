@@ -27,14 +27,14 @@ public class RandomEvent {
                     student.setHp(student.getHp() -5);
                     System.out.println("다음 버스를 기다리자...");
 
-                    System.out.println("[체력] : "+student.getHp()+" [소지금] : "+student.getMoney()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+                    System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
                     System.out.println();
                     break;
                 }
             } else if (i==2){
                 System.out.println("버스타고 학교 도착!");
                 student.setHp(student.getHp()+5);
-                System.out.println("[체력] : "+student.getHp()+" [소지금] : "+student.getMoney()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+                System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
                 System.out.println();
             }
         }
@@ -63,7 +63,7 @@ public class RandomEvent {
                 if(random==1){
                     System.out.println(eventTxt.getUfeEvent(1));
                     student.setHp(student.getHp() +5);
-                    System.out.println("[체력] : "+student.getHp()+" [소지금] : "+student.getMoney()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+                    System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
                     System.out.println();
                 }
             }else if(i==1){
@@ -73,14 +73,14 @@ public class RandomEvent {
                     System.out.println(eventTxt.getUfeEvent(6));
                     student.setHp(student.getHp()-5);
                     System.out.println("다음 지하철 기다리는중... ㅠ");
-                    System.out.println("[체력] : "+student.getHp()+" [소지금] : "+student.getMoney()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+                    System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
                     System.out.println();
                     break;
                 }
             } else if(i==2){
                 System.out.println("지하철 타고 학교 도착!");
                 student.setHp(student.getHp() + 5);
-                System.out.println("[체력] : "+student.getHp()+" [소지금] : "+student.getMoney()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+                System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
                 System.out.println();
             }
         }
@@ -110,7 +110,7 @@ public class RandomEvent {
                 if(random==1){
                     System.out.println(eventTxt.getUfeEvent(1));
                     student.setHp(student.getHp()+5);
-                    System.out.println("[체력] : "+student.getHp()+" [소지금] : "+student.getMoney()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+                    System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
                     System.out.println();
                 }
             } else if(i==1){
@@ -119,20 +119,20 @@ public class RandomEvent {
                 if(random==1){
                     System.out.println(eventTxt.getUfeEvent(7));
                     student.setHp(student.getHp() - 10);
-                    System.out.println("[체력] : "+student.getHp()+" [소지금] : "+student.getMoney()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+                    System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
                     System.out.println();
                     break;
                 }
             } else if(i==2){
                 System.out.println("택시타고 학교 도착~!");
                 student.setHp(student.getHp()+10);
-                System.out.println("1[체력] : "+student.getHp()+" [소지금] : "+student.getMoney()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+                System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
                 System.out.println();
             }
         }
         if(i==1){
             System.out.println("어찌저찌 지각은 면했다 ㅠㅠ");
-            System.out.println("1[체력] : "+student.getHp()+" [소지금] : "+student.getMoney()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+            System.out.println("[체력] : "+student.getHp()+ " [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
 
             System.out.println();
         }
@@ -157,7 +157,7 @@ public class RandomEvent {
                 if(random ==1){
                     System.out.println(eventTxt.getUfeEvent(1));
                     student.setHp(student.getHp() + 10);
-                    System.out.println("[체력] : "+student.getHp()+" [소지금] : "+student.getMoney()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+                    System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
                     System.out.println();
                 }
             } else if(i==1){
@@ -166,7 +166,7 @@ public class RandomEvent {
                 if(random==1){
                     System.out.println(eventTxt.getUfeEvent(4));
                     student.setHp(student.getHp()-5);
-                    System.out.println("[체력] : "+student.getHp()+" [소지금] : "+student.getMoney()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
+                    System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
                     System.out.println();
                 }
             } else {

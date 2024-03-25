@@ -77,7 +77,7 @@ public class EventTxt {
     public void displayStats(Student student) {
         System.out.println("체력: " + student.getHp());
         System.out.println("지능: " + student.getIntelligence());
-        System.out.println("소지금: " + student.getMoney());
+//        System.out.println("소지금: " + student.getMoney());
         System.out.println("인망: " + student.getFame());
         System.out.println("히든 능력치 '교수님의 선택': " + student.getHiddenAbility());
     }

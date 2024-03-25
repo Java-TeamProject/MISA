@@ -39,6 +39,8 @@ public class Morning {
                 randomEvent.randomEventTaxiAction(player);
                 break;
         }
+        System.out.println("[체력] : "+player.getHp()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
+
         morningSchoolEvent(player);
     }
 
@@ -51,8 +53,7 @@ public class Morning {
         // 체력이 6 미만인 경우
         if (player.getHp() < 6) {
             System.out.println("체력이 부족하여 잠들었습니다.");
-            System.out.println("[체력] : "+player.getHp()+" [소지금] : "+player.getMoney()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
-            sc.close();
+            System.out.println("[체력] : "+player.getHp()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
             return; // 메서드 종료
         }
         // 오전 수업 중 돌발 이벤트 발생
@@ -109,17 +110,17 @@ public class Morning {
                     // 체력이 10 이상이면 지능을 5 증가
                     if (player.getHp() >= 10) {
                         player.setIntelligence(player.getIntelligence() + 5);
-                        System.out.println("[체력] : "+player.getHp()+" [소지금] : "+player.getMoney()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
+                        System.out.println("[체력] : "+player.getHp()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
 
                     } else { // 체력이 6 이상 10 미만인 경우 지능을 4 증가
                         player.setIntelligence(player.getIntelligence() + 4);
-                        System.out.println("[체력] : "+player.getHp()+" [소지금] : "+player.getMoney()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
+                        System.out.println("[체력] : "+player.getHp()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
 
                     }
                 }
             } else {
                 System.out.println("오답입니다. 공부를 좀 더 해주세요.");
-                System.out.println("[체력] : "+player.getHp()+" [소지금] : "+player.getMoney()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
+                System.out.println("[체력] : "+player.getHp()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
 
             }
         } else if (choice == 1){
@@ -127,7 +128,7 @@ public class Morning {
             // 체력과 지능 감소
             player.setHp(player.getHp() - 2);
             player.setIntelligence(player.getIntelligence() - 2);
-            System.out.println("[체력] : "+player.getHp()+" [소지금] : "+player.getMoney()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
+            System.out.println("[체력] : "+player.getHp()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
 
         }
         else if (choice == 3) {
@@ -136,13 +137,13 @@ public class Morning {
                 System.out.println("정글님 사랑해요!!!!!!!!! ... 승급에 성공했다.");
                 player.setHp(player.getHp() + 5); // 체력 증가
                 player.setIntelligence(player.getIntelligence() + 5); // 지능 증가
-                System.out.println("[체력] : "+player.getHp()+" [소지금] : "+player.getMoney()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
+                System.out.println("[체력] : "+player.getHp()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
                 System.out.println();
             } else {
                 System.out.println("아 우리 서포터 왜 이래!!! ... 강등 당했다.");
                 player.setHp(player.getHp() - 2); // 체력 감소
                 player.setIntelligence(player.getIntelligence() - 2); // 지능 감소
-                System.out.println("[체력] : "+player.getHp()+" [소지금] : "+player.getMoney()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
+                System.out.println("[체력] : "+player.getHp()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
                 System.out.println();
             }
         } else if (choice==4) {
@@ -150,7 +151,7 @@ public class Morning {
             // 체력과 지능 감소
             player.setHp(player.getHp() - 2);
             player.setIntelligence(player.getIntelligence() - 2);
-            System.out.println("[체력] : "+player.getHp()+" [소지금] : "+player.getMoney()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
+            System.out.println("[체력] : "+player.getHp()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
             System.out.println();
         }
 
