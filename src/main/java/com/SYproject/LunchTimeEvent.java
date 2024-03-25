@@ -8,7 +8,7 @@ public class LunchTimeEvent {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("점심시간이다~~ 뭐할까??");
+        System.out.println("점심시간이다~~ 뭐할까??");
 
         System.out.println("1. 밥 먹기");
         System.out.println("2. 커피 마시기");

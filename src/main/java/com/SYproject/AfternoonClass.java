@@ -4,9 +4,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class AfternoonClass {
+    static Scanner sc=new Scanner(System.in);
     //고정 이벤트
     public void afternoonFEStart(Student student){
-        Scanner sc = new Scanner(System.in);
+
 
         // 사용자에게 입력 안내 메시지 출력
 
@@ -51,7 +52,7 @@ public class AfternoonClass {
 
     // 수업 활동 처리 메서드
     public static void doClass(Student student) {
-        Scanner sc = new Scanner(System.in);
+
 
         System.out.println("1. 3시간 풀강");
         System.out.println("2. 1시간 빨리 끝남");
@@ -85,7 +86,7 @@ public class AfternoonClass {
                     // 체력 +50, 지능 -50
                     student.setHp(student.getHp()+50);
                     student.setIntelligence(student.getIntelligence());
-
+                    isTrue=false;
                     break;
                 default:
                     System.out.println("올바른 수업 활동을 선택해주세요.");
@@ -96,7 +97,7 @@ public class AfternoonClass {
 
     // 프로젝트 활동 처리 메서드
     public static void doProject(Student student) {
-        Scanner sc = new Scanner(System.in);
+
         System.out.println("1. 팀장");
         System.out.println("2. 팀원");
         System.out.println("3. 잠수");
@@ -140,7 +141,7 @@ public class AfternoonClass {
 
     // 공부 활동 처리 메서드
     public  void doStudy(Student student) {
-        Scanner sc = new Scanner(System.in);
+
 
         System.out.println("1. 잠자기");
         System.out.println("2. 질문하기");
@@ -185,7 +186,7 @@ public class AfternoonClass {
 
     // 필기 활동 처리 메서드
     public  void doWriting(Student student) {
-        Scanner sc = new Scanner(System.in);
+
         System.out.println("1. 모두 다 필기");
         System.out.println("2. 절반만 필기");
         System.out.println("3. 필기 포기");
@@ -231,7 +232,7 @@ public class AfternoonClass {
     // 돌발 이벤트
     public void afternoonSEStart(Student student) {
         Random random = new Random();
-        Scanner sc = new Scanner(System.in);
+
 
         System.out.println("<오후수업 돌발이벤트>");
 
@@ -252,7 +253,6 @@ public class AfternoonClass {
                 System.out.println("잘못된 이벤트입니다.");
                 System.out.print("다시 입력하세요 : ");
         }
-        sc.close();
     }
 
     // 피로 이벤트
@@ -354,10 +354,12 @@ public class AfternoonClass {
                 case 2:
                     System.out.println("대답 포기를 선택하셨습니다.");
                     modifyStudentStatus(student, 30, 0, -20);
+                    isTrue=false;
                     break;
                 case 3:
                     System.out.println("역질문 하기를 선택하셨습니다.");
                     modifyStudentStatus(student, 10, 0, 10);
+                    isTrue=false;
                     break;
                 default:
                     System.out.println("잘못된 선택입니다.");
