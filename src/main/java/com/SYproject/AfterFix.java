@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class AfterFix {
+
         /*1.	공부 (체력에 따라)
                 결말 (1) 공부하다 잠들었다. 아침 된다. (체력 up)
                 (침대 선택지와 수치 차이 두기)
@@ -19,6 +20,8 @@ public class AfterFix {
                 결말 (2) 푹 잘 자서 체력 많이 올라갔다.
 */
     public static void AfterFixEvent(Student std){
+        AfterSuddenEvent afterSuddenEvent=new AfterSuddenEvent();
+
         //오후 타임 시작 멘트
         System.out.println("< 오후 5시 오후 수업 종료 >");
         System.out.println("드디어 오늘의 모든 수업이 끝났습니다!");
@@ -90,13 +93,16 @@ public class AfterFix {
                     // randomNum -= probabilities[i]; // 현재 단계의 확률만큼 값을 감소시켜 다음 단계의 비교를 위해 준비
                 }
 
+                afterSuddenEvent.meetCollegeSenior(std);
                 //돌발이벤트 자리
+
 
                 break;
 
             case 3:
                 System.out.println("피곤한 몸을 이끌고 집에 온 당신, 푹신한 침대에 누워 유튜브를 시청합니다.");
                 System.out.println("힐링 중...");
+                afterSuddenEvent.playGameWell(std);
                 //돌발이벤트
                 System.out.println("충분한 휴식을 취한 당신은 맘 편히 잡니다. (체력 +20)");
                 std.setHp(std.getHp() + 20);
@@ -107,6 +113,7 @@ public class AfterFix {
             case 4:
                 System.out.println("집에 오자마자 씻고 누운 당신, 내일을 위해 이른 잠자리에 듭니다.");
                 System.out.println("꿈나라 여행 중 ...");
+                afterSuddenEvent.emergencyRescue(std);
                 // 꿈나라 여행 중의 확률 설정
                 double dreamPercent = 0.1; // 10%의 확률로 꿈나라 여행
 
@@ -132,6 +139,7 @@ public class AfterFix {
                 System.out.println("보기에 있는 숫자를 입력해주세요.");
                 //돌발이벤트 자리
                 break;
+
 
         }
     }
