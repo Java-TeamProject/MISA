@@ -69,7 +69,7 @@ public class AfternoonClass {
                     if (student.getHp() > 30) {
                         // 체력 -30, 지능 +30
                         student.setHp(student.getHp() - 30);
-                        student.setIntelligence(student.getIntelligence() + 30);
+                        student.setIntelligence(student.getIntelligence() + 20);
                         isTrue = false;
                         break;
                     } else {

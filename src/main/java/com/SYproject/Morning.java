@@ -109,11 +109,11 @@ public class Morning {
                 if (player.getHp() >= 6) {
                     // 체력이 10 이상이면 지능을 5 증가
                     if (player.getHp() >= 10) {
-                        player.setIntelligence(player.getIntelligence() + 5);
+                        player.setIntelligence(player.getIntelligence() + 20);
                         System.out.println("[체력] : "+player.getHp()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
 
                     } else { // 체력이 6 이상 10 미만인 경우 지능을 4 증가
-                        player.setIntelligence(player.getIntelligence() + 4);
+                        player.setIntelligence(player.getIntelligence() + 10);
                         System.out.println("[체력] : "+player.getHp()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
 
                     }
@@ -126,8 +126,8 @@ public class Morning {
         } else if (choice == 1){
             System.out.println("흠냐흠냐 잘잤다..");
             // 체력과 지능 감소
-            player.setHp(player.getHp() - 2);
-            player.setIntelligence(player.getIntelligence() - 2);
+            player.setHp(player.getHp() + 10);
+            player.setIntelligence(player.getIntelligence() - 10);
             System.out.println("[체력] : "+player.getHp()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
 
         }

@@ -90,14 +90,14 @@ public class AfterFix {
 
                 // 0부터 1 사이의 난수 생성
                 double randomNum = random.nextDouble();
-
+                // 퍼센티지가 30 40 30퍼센트의 확률로 나뉘게 if문을 나눔
+                int rand = (int) (Math.random()*10 +1);
                 // 각 단계별 확률을 비교하여 어느 단계에 해당하는지 결정
-                for (int i = 0; i < percent1.length; i++) {
-                    if (randomNum < percent1[i]) {
-                        System.out.println(messages[i]);
+                    if (rand<4) {
+                        System.out.println(messages[0]);
                         // 해당 단계의 체력 회복량을 적용
-                        std.setHp(std.getHp() + updateHp[i]);
-                        std.setIntelligence(std.getIntelligence()+updateintel[i]);
+                        std.setHp(std.getHp() + updateHp[0]);
+                        std.setIntelligence(std.getIntelligence()+updateintel[0]);
 
 //                        //돌발이벤트 발생
 //                        if(0==(int)(Math.random()*3)){
@@ -105,10 +105,20 @@ public class AfterFix {
 //                        }
 
                         System.out.println("[체력] : "+std.getHp()+" [지능] : "+std.getIntelligence()+" [인망] : "+std.getFame());
-                        break;
+
+                    } else if(rand>=4 && rand <=7){
+                        System.out.println(messages[1]);
+                        std.setHp(std.getHp() + updateHp[1]);
+                        std.setIntelligence(std.getIntelligence()+updateintel[1]);
+
+                    } else {
+                        System.out.println(messages[2]);
+                        std.setHp(std.getHp() + updateHp[2]);
+                        std.setIntelligence(std.getIntelligence()+updateintel[2]);
+
                     }
                     // randomNum -= probabilities[i]; // 현재 단계의 확률만큼 값을 감소시켜 다음 단계의 비교를 위해 준비
-                }
+
 //                if(0==(int)(Math.random()*3)){
                     afterSuddenEvent.meetCollegeSenior(std);
 //                }
@@ -127,16 +137,17 @@ public class AfterFix {
 
 //                // 돌발이벤트 확률 설정
 //                double randomPercent3 = 0.3; // 30%의 확률로 돌발이벤트 발생
-//
+                int rand2 = (int)(Math.random()*10+1);
 //                Random random3 = new Random();
 //                // 0부터 1 사이의 난수 생성
 //                double RandomNumber3 = random3.nextDouble();
-//
+
 //                // 돌발이벤트 확률에 따라 실행 선택
 //                if (RandomNumber3 < randomPercent3) {
 //                    //돌발이벤트 자리
+                if(rand2 <4){
                     afterSuddenEvent.playGameWell(std);
-//                }
+                }
 
                 //돌발이벤트
                 System.out.println();
@@ -157,11 +168,13 @@ public class AfterFix {
 //                Random random4 = new Random();
 //                // 0부터 1 사이의 난수 생성
 //                double RandomNumber4 = random4.nextDouble();
-//
+                int rand4 = (int)(Math.random()*10+1);
 //                // 돌발이벤트 확률에 따라 실행 선택
 //                if (RandomNumber4 < randomPercent4) {
 //                    //돌발이벤트 자리
-                afterSuddenEvent.emergencyRescue(std);
+                if(rand4<4) {
+                    afterSuddenEvent.emergencyRescue(std);
+                }
 //                }
                 // 꿈나라 여행 중의 확률 설정
                 double dreamPercent = 0.1; // 10%의 확률로 꿈나라 여행
