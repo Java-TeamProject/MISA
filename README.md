@@ -59,21 +59,21 @@ MISA
 ├── out
 └── src
      └── main
-              └── java
-                         └── com
-                                    └── SYproject
-                                                   └── After_EndingASCIICodeArt
-                                                   └── AfterFix
-                                                   └── AfternoonClass
-                                                   └── AfterSuddenEvent
-                                                   └── Application 
-                                                   └── Ending
-                                                   └── EventTxt
-                                                   └── LunchTimeEvent
-                                                   └── Morning
-                                                   └── RandomEvent
-                                                   └── Start
-                                                   └── Student
+          └── java
+               └── com
+                    └── SYproject
+                            └── After_EndingASCIICodeArt
+                            └── AfterFix
+                            └── AfternoonClass
+                            └── AfterSuddenEvent
+                            └── Application 
+                            └── Ending
+                            └── EventTxt
+                            └── LunchTimeEvent
+                            └── Morning
+                            └── RandomEvent
+                            └── Start
+                            └── Student
 ```
 
 <br>
@@ -132,14 +132,14 @@ MISA
 ## 6. 시간별 기능
 
 ### [프롤로그]
-1.1 게임에 대한 간단한 소개와 문구를 출력합니다.
-1.2 캐릭터의 상황, 배경 그리고 사용자가 목표 방향성 간단하게 제시합니다.
-1.3 캐릭터의 이름을 사용자가 설정하는 기능합니다.
+- 1.1 게임에 대한 간단한 소개와 문구를 출력합니다.
+- 1.2 캐릭터의 상황, 배경 그리고 사용자가 목표 방향성 간단하게 제시합니다.
+- 1.3 캐릭터의 이름을 사용자가 설정하는 기능합니다.
 
 ### [아침 시간]
-2.1 첫번째 고정이벤트 시작합니다.
-2.2 하루가 끝나면, 아침 기상 이벤트로 다시 돌아와 다음 하루 시작합니다.
-2.3 돌발이벤트 발생합니다.
+- 2.1 첫번째 고정이벤트 시작합니다.
+- 2.2 하루가 끝나면, 아침 기상 이벤트로 다시 돌아와 다음 하루 시작합니다.
+- 2.3 돌발이벤트 발생합니다.
 
 <br>
 
