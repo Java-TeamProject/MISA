@@ -24,7 +24,7 @@ public class Application {
             AfterFix afterFix = new AfterFix();
             afterFix.AfterFixEvent(student);
             day++;
-            if(day>2)break;
+            if(day>3)break;
         }
 
         Ending ending = new Ending(student);
