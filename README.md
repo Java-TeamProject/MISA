@@ -4,6 +4,8 @@
 <br>
 
 ## 프로젝트 소개
+![024](https://github.com/Java-TeamProject/MISA/assets/106863692/ab4e2544-7152-4b2e-85fa-2da4cdf0c82a)
+
 
 - 삼육대학교 4학년 2학기를 보낼 예정인 예비 졸업생을 대상으로 졸업을 향한 학생 키우기 게임입니다!
 - 게임 시간 기준으로 14일 동안 진행되며 1일 안에 아침 시간, 오전 수업, 점심 시간, 오후 수업, 오후 수업 후 시간으로 나누어 진행됩니다.
@@ -93,8 +95,9 @@ MISA
 <br>
 
 ## 4. 역할 분담
+![005](https://github.com/Java-TeamProject/MISA/assets/106863692/fbc771b2-62a1-4470-8310-0b1b697f8817)
 
-![005](https://github.com/Java-TeamProject/MISA/assets/106863692/351a1b3e-d9ec-4b32-9d00-95084f354306)
+
 
 ### 😼 이재혁
 
@@ -129,11 +132,12 @@ MISA
 
 ## 5. 개발 기간 및 작업 관리
 
+
 ### 개발 기간
 
 - 전체 개발 기간 : 2024-3-20 ~ 2024-3-26
 - 기능 구현 : 2024-3-21 ~ 2024-3-26
-
+![007](https://github.com/Java-TeamProject/MISA/assets/106863692/87c91ac2-7caf-408f-811b-8ff8181c2911)
 <br>
 
 ### 작업 관리
