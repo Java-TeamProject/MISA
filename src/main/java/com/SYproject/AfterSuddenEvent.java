@@ -15,7 +15,7 @@ public class AfterSuddenEvent{
 
     /*고정 대학사람들과 재밌는 술자리 선택 이벤트 연계 선배와의 술자리 돌발 이벤트*/
     public void meetCollegeSenior(Student student) {
-        if(0==(int)(Math.random()*3)) {
+//        if(0==(int)(Math.random()*3)) {
             System.out.println();
             System.out.println("돌발 이벤트 발생!");
             System.out.println("친구들과 술을 마시고 집을 가는 도중 졸업 후 취업한 친한 선배를 만났다. \n" +
@@ -50,12 +50,12 @@ public class AfterSuddenEvent{
                 }
 
             } while (true);
-        }
+//        }
     }
 
     /*유튜브로 통한 휴식 시간 선택 이벤트 연계 게임 하기 돌발 이벤트*/
     public void playGameWell(Student student){
-        if(0==(int)(Math.random()*3)) {
+//        if(0==(int)(Math.random()*3)) {
             System.out.println();
             System.out.println("돌발 이벤트 발생!");
             System.out.println("유튜브를 보면서 휴식중에 내가 하는 게임의 프로게이머의 슈퍼플레이 영상을 보았다.\n" +
@@ -97,13 +97,13 @@ public class AfterSuddenEvent{
                 }
 
             } while (true);
-        }
+//        }
     }
 
 
     /*일찍 잠드는 선택 이벤트 연계 옆집의 죽을 것같은 목소리 돌발 이벤트*/
     public void emergencyRescue(Student student) {
-        if (0 == (int) (Math.random() * 3)) {
+//        if (0 == (int) (Math.random() * 3)) {
             System.out.println();
             System.out.println("돌발 이벤트 발생!");
             System.out.println("잠을 자고 있는데 평소에 잘 알고 지내던 옆집에서 죽을 듯한 목소리가 들린다. 119를 부르고 응급실에 데려가야 할까?");
@@ -140,6 +140,6 @@ public class AfterSuddenEvent{
                 }
 
             } while (true);
-        }
+//        }
     }
 }

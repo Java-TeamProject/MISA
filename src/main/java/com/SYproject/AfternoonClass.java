@@ -95,7 +95,6 @@ public class AfternoonClass {
                     System.out.print("다시 선택해주세요 : ");
             }
         }while(isTrue);
-        System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
 
     }
 

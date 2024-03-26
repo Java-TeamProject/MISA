@@ -145,9 +145,9 @@ public class AfterFix {
 //                // 돌발이벤트 확률에 따라 실행 선택
 //                if (RandomNumber3 < randomPercent3) {
 //                    //돌발이벤트 자리
-                if(rand2 <4){
+//                if(rand2 <4){
                     afterSuddenEvent.playGameWell(std);
-                }
+//                }
 
                 //돌발이벤트
                 System.out.println();
@@ -172,9 +172,9 @@ public class AfterFix {
 //                // 돌발이벤트 확률에 따라 실행 선택
 //                if (RandomNumber4 < randomPercent4) {
 //                    //돌발이벤트 자리
-                if(rand4<4) {
+//                if(rand4<4) {
                     afterSuddenEvent.emergencyRescue(std);
-                }
+//                }
 //                }
                 // 꿈나라 여행 중의 확률 설정
                 double dreamPercent = 0.1; // 10%의 확률로 꿈나라 여행
