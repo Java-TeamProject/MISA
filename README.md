@@ -26,14 +26,13 @@
 <br>
 
 ## 1. 개발 환경
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/tooljet/tooljet-ce)
-![Number of GitHub contributors](https://img.shields.io/github/contributors/tooljet/tooljet)
-[![Number of GitHub issues that are open](https://img.shields.io/github/issues/ToolJet/ToolJet)](https://github.com/ToolJet/ToolJet/issues)
-[![Number of GitHub stars](https://img.shields.io/github/stars/ToolJet/ToolJet)](https://github.com/ToolJet/ToolJet/stargazers)
-![Number of GitHub closed issues](https://img.shields.io/github/issues-closed/tooljet/tooljet)
-![Number of GitHub pull requests that are open](https://img.shields.io/github/issues-pr-raw/tooljet/tooljet)
-![GitHub release; latest by date](https://img.shields.io/github/v/release/tooljet/tooljet)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/tooljet/tooljet)
+![Number of GitHub contributors](https://img.shields.io/github/contributors/Java-TeamProject/MISA)
+[![Number of GitHub issues that are open](https://img.shields.io/github/issues/ToolJet/ToolJet)](https://github.com/Java-TeamProject/MISA/issues)
+[![Number of GitHub stars](https://img.shields.io/github/stars/ToolJet/ToolJet)](https://github.com/Java-TeamProject/MISA/stargazers)
+![Number of GitHub closed issues](https://img.shields.io/github/issues-closed/Java-TeamProject/MISA)
+![Number of GitHub pull requests that are open](https://img.shields.io/github/issues-pr-raw/Java-TeamProject/MISA)
+![GitHub release; latest by date](https://img.shields.io/github/v/release/Java-TeamProject/MISA)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Java-TeamProject/MISA)
 
 
 ![004](https://github.com/Java-TeamProject/MISA/assets/106863692/9aa89b66-62a6-46a0-b3a5-9e095de2fa88)
