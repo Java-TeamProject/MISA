@@ -28,7 +28,6 @@
 ## 1. 개발 환경
 ![Number of GitHub contributors](https://img.shields.io/github/contributors/Java-TeamProject/MISA)
 [![Number of GitHub issues that are open](https://img.shields.io/github/issues/ToolJet/ToolJet)](https://github.com/Java-TeamProject/MISA/issues)
-[![Number of GitHub stars](https://img.shields.io/github/stars/ToolJet/ToolJet)](https://github.com/Java-TeamProject/MISA/stargazers)
 ![Number of GitHub closed issues](https://img.shields.io/github/issues-closed/Java-TeamProject/MISA)
 ![Number of GitHub pull requests that are open](https://img.shields.io/github/issues-pr-raw/Java-TeamProject/MISA)
 ![GitHub release; latest by date](https://img.shields.io/github/v/release/Java-TeamProject/MISA)
