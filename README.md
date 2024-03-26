@@ -135,9 +135,9 @@ MISA
 
 ### 개발 기간
 
-- 전체 개발 기간 : 2024-3-20 ~ 2024-3-26
+- 전체 개발 기간 : 2024-3-19 ~ 2024-3-26
 - 기능 구현 : 2024-3-21 ~ 2024-3-26
-<p align="center"><img src="https://github.com/Java-TeamProject/MISA/assets/106863692/c2dce707-ae8c-4f32-9b88-2bb32b50d179" height=540 width=540></p>
+<p align="center"><img src="https://github.com/Java-TeamProject/MISA/assets/106863692/0fb4b2ea-32be-4e1b-8d57-14b46926a3de" height=540 width=540></p>
 
 ### 작업 관리
 
