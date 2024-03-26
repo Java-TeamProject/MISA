@@ -4,7 +4,7 @@
 <br>
 
 ## 프로젝트 소개
-<p align="center"><img src="https://github.com/Java-TeamProject/MISA/assets/106863692/3b963f56-9dc5-4195-9dc6-0f43ca61be63" height=600 width=600></p>
+<p align="center"><img src="https://github.com/Java-TeamProject/MISA/assets/106863692/3b963f56-9dc5-4195-9dc6-0f43ca61be63" height=540 width=540></p>
 
 - 삼육대학교 4학년 2학기를 보낼 예정인 예비 졸업생을 대상으로 졸업을 향한 학생 키우기 게임입니다!
 - 게임 시간 기준으로 14일 동안 진행되며 1일 안에 아침 시간, 오전 수업, 점심 시간, 오후 수업, 오후 수업 후 시간으로 나누어 진행됩니다.
@@ -32,7 +32,7 @@
 [![Number of GitHub issues that are open](https://img.shields.io/github/issues/ToolJet/ToolJet)](https://github.com/Java-TeamProject/MISA/issues)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Java-TeamProject/MISA)
 
-<p align="center"><img src="https://github.com/Java-TeamProject/MISA/assets/106863692/5a7fb18a-1694-4c3c-a762-cbcc942a22bb" height=600 width=600></p>
+<p align="center"><img src="https://github.com/Java-TeamProject/MISA/assets/106863692/5a7fb18a-1694-4c3c-a762-cbcc942a22bb" height=540 width=540></p>
 
 
 
@@ -137,7 +137,7 @@ MISA
 
 - 전체 개발 기간 : 2024-3-20 ~ 2024-3-26
 - 기능 구현 : 2024-3-21 ~ 2024-3-26
-<p align="center"><img src="https://github.com/Java-TeamProject/MISA/assets/106863692/c2dce707-ae8c-4f32-9b88-2bb32b50d179" height=600 width=600></p>
+<p align="center"><img src="https://github.com/Java-TeamProject/MISA/assets/106863692/c2dce707-ae8c-4f32-9b88-2bb32b50d179" height=540 width=540></p>
 
 ### 작업 관리
 
