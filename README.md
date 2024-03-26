@@ -27,7 +27,9 @@
 
 ## 1. 개발 환경
 
-
+![Number of GitHub contributors](https://img.shields.io/github/contributors/Java-TeamProject/MISA)
+[![Number of GitHub issues that are open](https://img.shields.io/github/issues/ToolJet/ToolJet)](https://github.com/Java-TeamProject/MISA/issues)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Java-TeamProject/MISA)
 
 ![004](https://github.com/Java-TeamProject/MISA/assets/106863692/9aa89b66-62a6-46a0-b3a5-9e095de2fa88)
 
@@ -36,9 +38,7 @@
 - 버전 및 이슈관리 : Github, Github Issues, Github Project
 - 협업 툴 : Discord, Notion, Github
 
-![Number of GitHub contributors](https://img.shields.io/github/contributors/Java-TeamProject/MISA)
-[![Number of GitHub issues that are open](https://img.shields.io/github/issues/ToolJet/ToolJet)](https://github.com/Java-TeamProject/MISA/issues)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Java-TeamProject/MISA)
+
 
 
 <br>
