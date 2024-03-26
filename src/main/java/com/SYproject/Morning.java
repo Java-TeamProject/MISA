@@ -39,7 +39,6 @@ public class Morning {
                 randomEvent.randomEventTaxiAction(player);
                 break;
         }
-        System.out.println("[체력] : "+player.getHp()+" [지능] : "+player.getIntelligence()+" [인망] : "+player.getFame());
 
         morningSchoolEvent(player);
     }
