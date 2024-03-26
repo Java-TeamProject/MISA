@@ -19,7 +19,7 @@
 
 | **이수빈** | **김상익** | **이재혁** | **배민서** | **오송은** |
 | :------: |  :------: | :------: | :------: |:------: |
-|<img src="https://github.com/Java-TeamProject/MISA/assets/106863692/83587648-9e28-4b27-88c6-f5b797b161e3" width="150" height="150"/> | [<img src="https://avatars.githubusercontent.com/u/112460466?v=4" height=150 width=150> <br/> @GTU9](https://github.com/GTU9) | [<img src="https://avatars.githubusercontent.com/u/112460506?v=4" height=150 width=150> <br/> @ohdyo](https://github.com/ohdyo) | [<img src="https://avatars.githubusercontent.com/u/76766459?v=4" height=150 width=150> <br/> @Baeminseo](https://github.com/Baeminseo) |<img src="https://github.com/Java-TeamProject/MISA/assets/135615995/03c8db73-f847-45b1-858e-741d5aa95d70.png" width="150" height="150"/>
+|[<img src="https://github.com/Java-TeamProject/MISA/assets/106863692/83587648-9e28-4b27-88c6-f5b797b161e3" width="150" height="150"/><br/> @joy:)](https://github.com/sb-77) | [<img src="https://avatars.githubusercontent.com/u/112460466?v=4" height=150 width=150> <br/> @GTU9](https://github.com/GTU9) | [<img src="https://avatars.githubusercontent.com/u/112460506?v=4" height=150 width=150> <br/> @ohdyo](https://github.com/ohdyo) | [<img src="https://avatars.githubusercontent.com/u/76766459?v=4" height=150 width=150> <br/> @Baeminseo](https://github.com/Baeminseo) |[<img src="https://github.com/Java-TeamProject/MISA/assets/135615995/03c8db73-f847-45b1-858e-741d5aa95d70.png" width="150" height="150"/><br/> @ddoddo1228](https://github.com/ddoddo1228)
 
 </div>
 
