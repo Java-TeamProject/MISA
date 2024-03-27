@@ -93,7 +93,7 @@ public class AfterSuddenEvent{
                     System.out.println("[체력] : " + student.getHp() + " [지능] : " + student.getIntelligence() + " [인망] : " + student.getFame());
                     break;
                 } else {
-                    System.out.println("선택지외 숫자를 입력하셨습니다. 다시 입력해주세요.");
+                    System.out.print("선택지외 숫자를 입력하셨습니다. 다시 입력해주세요 : ");
                 }
 
             } while (true);
