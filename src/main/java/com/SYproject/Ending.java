@@ -47,7 +47,7 @@ public class Ending {
         After_EndingASCIICodeArt art=new After_EndingASCIICodeArt();
 
         /*진엔딩 : 대기업 취업!*/
-        if(getResultIntelligence()>=120&&getResultFame()>=120) {
+        if(getResultIntelligence()>=350&&getResultFame()>=350) {
             art.endingGood();//cg 출력
 
             System.out.println("4학년 1학기까지 흘러가는 대로 대학생활을 했던 나는 이번 학기, 누구보다 열심히 살았다."+'\n'+
@@ -65,7 +65,7 @@ public class Ending {
 
 
             /*히든엔딩 : 대학원생*/
-        }else if (getResultIntelligence()>=100&&getResultFame()>=100&&getResultHiddenAbility()==1) {
+        }else if (getResultIntelligence()>=300&&getResultFame()>=300&&getResultHiddenAbility()==1) {
             art.endingSlave();//cg 출력
 
             System.out.println("졸업할 날이 얼마 안남았던 때, 이번 학기에 뵙고 친해진 교수님에게 연락이 왔다." +'\n'+
@@ -81,7 +81,7 @@ public class Ending {
             calculateResult();
 
             /*노말엔딩 A : 무사히 졸업*/
-        } else if (getResultIntelligence()>=100&&getResultIntelligence()>= getResultFame()) {
+        } else if (getResultIntelligence()>=300&&getResultIntelligence()>= getResultFame()) {
             art.endingA();//cg 출력
 
             System.out.println("졸업할 때가 다가왔다. 전 학기에는 학점이 불안정해 졸업을 못할 수도 있을 것 같다고 생각했다."+'\n'+
@@ -98,7 +98,7 @@ public class Ending {
 
 
             /*노말엔딩 B : 혈연 다음은 학연!*/
-        } else if (getResultFame()>=100&&getResultIntelligence()< getResultFame()) {
+        } else if (getResultFame()>=300&&getResultIntelligence()< getResultFame()) {
             art.endingB();//cg 출력
 
             System.out.println("졸업할 때가 다가왔다. 전 학기에는 사람들과 인연도 없고, 몇몇 친구 말고는 얘기도 잘 하지 못했다."+'\n'+
