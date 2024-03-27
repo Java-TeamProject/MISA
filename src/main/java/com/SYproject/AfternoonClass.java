@@ -17,39 +17,46 @@ public class AfternoonClass {
         System.out.println("4. 필기");
 
         System.out.print("어떤 활동을 하시겠습니까? : ");
-        int choice = sc.nextInt();
 
-
-        // 선택된 활동에 따라 체력, 인망, 지능 조절
-        switch (choice) {
-            case 1:
-                int ran1 = (int)(Math.random()*2+1);
-                if(ran1==1) {
-                    afternoonSEStart(student);
-                } else {
-                    doClass(student);
-                }
-                break;
-            case 2:
-                int ran2 = (int)(Math.random()+2+1);
-                if(ran2==1){
-                    afternoonSEStart(student);
-                }else {
-                    doProject(student);
-                }
-                break;
-            case 3:
-                doStudy(student);
-                break;
-            case 4:
-                doWriting(student);
-                break;
-            default:
-                System.out.println("올바른 활동을 선택해주세요.");
-                System.out.print("다시 선택해주세요 : ");
-        }
-        System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
-
+        boolean isTrue = true;
+        do {
+            int choice = sc.nextInt();
+            // 선택된 활동에 따라 체력, 인망, 지능 조절
+            switch (choice) {
+                case 1:
+                    int ran1 = (int) (Math.random() * 2 + 1);
+                    if (ran1 == 1) {
+                        afternoonSEStart(student);
+                        isTrue = false;
+                    } else {
+                        doClass(student);
+                        isTrue = false;
+                    }
+                    break;
+                case 2:
+                    int ran2 = (int) (Math.random()*2 + 1);
+                    if (ran2 == 1) {
+                        afternoonSEStart(student);
+                        isTrue = false;
+                    } else {
+                        doProject(student);
+                        isTrue = false;
+                    }
+                    break;
+                case 3:
+                    doStudy(student);
+                    isTrue = false;
+                    break;
+                case 4:
+                    doWriting(student);
+                    isTrue = false;
+                    break;
+                default:
+                    System.out.println("올바른 활동을 선택해주세요.");
+                    System.out.print("다시 선택해주세요 : ");
+            }
+        }while(isTrue);
+        System.out.println("[체력] : " + student.getHp() + " [지능] : " + student.getIntelligence() + " [인망] : " + student.getFame());
     }
 
     // 수업 활동 처리 메서드
@@ -95,7 +102,6 @@ public class AfternoonClass {
                     System.out.print("다시 선택해주세요 : ");
             }
         }while(isTrue);
-        System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
 
     }
 
@@ -140,6 +146,7 @@ public class AfternoonClass {
                     break;
                 default:
                     System.out.println("올바른 프로젝트 활동을 선택해주세요.");
+                    System.out.print("다시 입력해주세요 : ");
             }
         }while(isTrue);
         System.out.println("[체력] : "+student.getHp()+" [지능] : "+student.getIntelligence()+" [인망] : "+student.getFame());
@@ -276,24 +283,31 @@ public class AfternoonClass {
 
         // 선택지 입력 안내
         System.out.print("선택지를 고르세요: ");
-        int choice = sc.nextInt();
 
-        switch (choice) {
-            case 1:
-                System.out.println("커피 마시기를 선택하셨습니다.");
-                modifyStudentStatus(student,10, 0, 0);
-                break;
-            case 2:
-                System.out.println("잠자기를 선택하셨습니다.");
-                modifyStudentStatus(student,20, 0, -20);
-                break;
-            case 3:
-                System.out.println("집에 가기를 선택하셨습니다.");
-                modifyStudentStatus(student,50, 0, -50);
-                break;
-            default:
-                System.out.println("잘못된 선택입니다.");
-        }
+        boolean istrue = true;
+        do {
+            int choice = sc.nextInt();
+            switch (choice) {
+                case 1:
+                    System.out.println("커피 마시기를 선택하셨습니다.");
+                    modifyStudentStatus(student, 10, 0, 0);
+                    istrue = false;
+                    break;
+                case 2:
+                    System.out.println("잠자기를 선택하셨습니다.");
+                    modifyStudentStatus(student, 20, 0, -20);
+                    istrue = false;
+                    break;
+                case 3:
+                    System.out.println("집에 가기를 선택하셨습니다.");
+                    modifyStudentStatus(student, 50, 0, -50);
+                    istrue = false;
+                    break;
+                default:
+                    System.out.println("잘못된 선택입니다.");
+                    System.out.print("다시 입력해주세요 : ");
+            }
+        }while(istrue);
     }
 
     // 과제 이벤트
@@ -334,6 +348,7 @@ public class AfternoonClass {
                     break;
                 default:
                     System.out.println("잘못된 선택입니다.");
+                    System.out.print("다시 입력해주세요 : ");
             }
         }while(isTrue);
     }
